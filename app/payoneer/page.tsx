@@ -1,3 +1,20 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Payoneer Verification - Elanix Enterprise",
+  description: "Payoneer verification page for Elanix Enterprise.",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
+}
+
 export default function PayoneerPage() {
     return (
       <div className="min-h-screen flex flex-col">

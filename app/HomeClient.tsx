@@ -22,7 +22,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { TestimonialSlider } from "@/components/testimonial-slider"
 import { services } from "@/lib/services"
 import { PricingTable } from "@/components/pricing-table"
-
+import { LocalBusinessJsonLd } from "@/components/json-ld"
 
 const features = [
   {
@@ -135,6 +135,39 @@ export default function HomeClient() {
 
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <LocalBusinessJsonLd
+        name="Elanix Enterprise"
+        description="Expert medical billing solutions for healthcare providers. Maximize revenue, reduce denials, and improve patient satisfaction."
+        url="https://elanixenterprise.com"
+        telephone="+1 (512) 375 9999"
+        address={{
+          streetAddress: "123 Medical Plaza",
+          addressLocality: "Las Vegas",
+          addressRegion: "NV",
+          postalCode: "89123",
+          addressCountry: "US",
+        }}
+        geo={{
+          latitude: 36.1147,
+          longitude: -115.1398,
+        }}
+        images={["https://elanixenterprise.com/images/office.jpg", "https://elanixenterprise.com/images/team.jpg"]}
+        sameAs={[
+          "https://facebook.com/elanixenterprise",
+          "https://twitter.com/elanixenterprise",
+          "https://linkedin.com/company/elanixenterprise",
+        ]}
+        openingHours={[
+          "Monday 09:00-17:00",
+          "Tuesday 09:00-17:00",
+          "Wednesday 09:00-17:00",
+          "Thursday 09:00-17:00",
+          "Friday 09:00-17:00",
+        ]}
+        priceRange="$$"
+      />
+
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 50 }}

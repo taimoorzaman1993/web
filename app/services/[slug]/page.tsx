@@ -1,10 +1,39 @@
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Check } from "lucide-react"
+import type { Metadata } from "next"
+
 
 import { services } from "@/lib/services"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
+
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const service = services.find((s) => s.slug === params.slug)
+
+  if (!service) {
+    return {
+      title: "Service Not Found",
+    }
+  }
+
+  return {
+    title: `${service.title} - Elanix Enterprise Medical Billing Services`,
+    description: service.description,
+    openGraph: {
+      title: `${service.title} - Elanix Enterprise Medical Billing Services`,
+      description: service.description,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://elanixenterprise.com"}/services/${service.slug}`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} - Elanix Enterprise`,
+      description: service.description,
+    },
+  }
+}
 
 export default function ServicePage({ params }: { params: { slug: string } }) {
   const service = services.find((s) => s.slug === params.slug)

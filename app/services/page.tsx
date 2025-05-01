@@ -1,6 +1,19 @@
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { services } from "@/lib/services"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Medical Billing Services - Elanix Enterprise",
+  description:
+    "Explore our comprehensive medical billing services including claims processing, revenue optimization, provider enrollment, and more. Tailored solutions for healthcare providers.",
+  openGraph: {
+    title: "Medical Billing Services - Elanix Enterprise",
+    description:
+      "Explore our comprehensive medical billing services including claims processing, revenue optimization, provider enrollment, and more. Tailored solutions for healthcare providers.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://elanixenterprise.com"}/services`,
+  },
+}
 
 export default function Services() {
   return (

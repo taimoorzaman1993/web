@@ -1,8 +1,19 @@
 import Image from "next/image"
 import { Clock, CheckCircle, Users, TrendingUp, Heart } from "lucide-react" 
 import { TestimonialSlider } from "@/components/testimonial-slider"
+import type { Metadata } from "next"
 
-
+export const metadata: Metadata = {
+  title: "About Elanix Enterprise - Our Medical Billing Expertise",
+  description:
+    "Learn about Elanix Enterprise's decade of experience in medical billing and revenue cycle management. Discover our team of certified experts and commitment to excellence.",
+  openGraph: {
+    title: "About Elanix Enterprise - Our Medical Billing Expertise",
+    description:
+      "Learn about Elanix Enterprise's decade of experience in medical billing and revenue cycle management. Discover our team of certified experts and commitment to excellence.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://elanixenterprise.com"}/about`,
+  },
+}
 
 
 const features = [
