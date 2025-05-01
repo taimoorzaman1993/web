@@ -212,7 +212,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Footer Bottom */}
           <div className="border-t border-purple-500">
             <div className="container mx-auto px-6 py-4">
-              <p className="text-center text-sm">© 2024 Elanix Enterprise All rights reserved.</p>
+              <p className="text-center text-sm">© 2025 Elanix Enterprise All rights reserved.</p>
             </div>
           </div>
         </div>

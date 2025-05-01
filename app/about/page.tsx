@@ -50,7 +50,7 @@ const testimonials = [
     author: "Dr. Emily Roberts",
     title: "Internal Medicine",
     content:
-      "Since partnering with MedBill Pro, our collections have improved significantly. Their team is professional and responsive.",
+      "Since partnering with Elanix Enterprise, our collections have improved significantly. Their team is professional and responsive.",
     rating: 5,
   },
   {
@@ -64,21 +64,21 @@ const testimonials = [
     author: "Dr. Sarah Thompson",
     title: "Pediatrics Specialist",
     content:
-      "MedBill Pro has been a game-changer for our practice. Their attention to detail and expertise in pediatric billing has significantly reduced our claim denials.",
+      "Elanix Enterprise been a game-changer for our practice. Their attention to detail and expertise in pediatric billing has significantly reduced our claim denials.",
     rating: 5,
   },
   {
     author: "Dr. Michael Chen",
     title: "Family Practice",
     content:
-      "The level of professionalism and expertise at MedBill Pro is unmatched. They've helped us optimize our billing processes and increase revenue.",
+      "The level of professionalism and expertise at Elanix Enterprise is unmatched. They've helped us optimize our billing processes and increase revenue.",
     rating: 5,
   },
   {
     author: "Dr. Lisa Anderson",
     title: "Orthopedic Surgery",
     content:
-      "Switching to MedBill Pro was the best decision for our practice. Their team is responsive, efficient, and truly cares about our success.",
+      "Switching to Elanix Enterprise was the best decision for our practice. Their team is responsive, efficient, and truly cares about our success.",
     rating: 5,
   },
 ]

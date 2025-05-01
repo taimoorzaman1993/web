@@ -86,7 +86,7 @@ const testimonials = [
     author: "Dr. Emily Roberts",
     title: "Internal Medicine",
     content:
-      "Since partnering with MedBill Pro, our collections have improved significantly. Their team is professional and responsive.",
+      "Since partnering with Elanix Enterprise, our collections have improved significantly. Their team is professional and responsive.",
     rating: 5,
   },
   {
@@ -100,21 +100,21 @@ const testimonials = [
     author: "Dr. Sarah Thompson",
     title: "Pediatrics Specialist",
     content:
-      "MedBill Pro has been a game-changer for our practice. Their attention to detail and expertise in pediatric billing has significantly reduced our claim denials.",
+      "Elanix Enterprise has been a game-changer for our practice. Their attention to detail and expertise in pediatric billing has significantly reduced our claim denials.",
     rating: 5,
   },
   {
     author: "Dr. Michael Chen",
     title: "Family Practice",
     content:
-      "The level of professionalism and expertise at MedBill Pro is unmatched. They've helped us optimize our billing processes and increase revenue.",
+      "The level of professionalism and expertise at Elanix Enterprise is unmatched. They've helped us optimize our billing processes and increase revenue.",
     rating: 5,
   },
   {
     author: "Dr. Lisa Anderson",
     title: "Orthopedic Surgery",
     content:
-      "Switching to MedBill Pro was the best decision for our practice. Their team is responsive, efficient, and truly cares about our success.",
+      "Switching to Elanix Enterprise was the best decision for our practice. Their team is responsive, efficient, and truly cares about our success.",
     rating: 5,
   },
 ]
@@ -550,7 +550,7 @@ export default function HomeClient() {
             <div className="space-y-4">
               {[
                 {
-                  question: "What makes MedBill Pro different from other billing services?",
+                  question: "What makes Elanix Enterprise different from other billing services?",
                   answer:
                     "We combine advanced technology with expert human oversight to deliver superior results and personalized service. Our dedicated team ensures maximum reimbursement while maintaining compliance.",
                 },
@@ -604,7 +604,7 @@ export default function HomeClient() {
       </motion.section>
  {/* iMessage Button */}
  <motion.a
-        href="sms:+15123759999&body=Hi Mr. Taimoor Zaman, I am interested in your services."
+        href="sms:+15123759999&body=Only Number."
         className="fixed bottom-24 right-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors z-50"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
