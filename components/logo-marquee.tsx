@@ -14,7 +14,7 @@ interface LogoMarqueeProps {
   className?: string
 }
 
-export function LogoMarquee({ logos, speed = 30, className = "" }: LogoMarqueeProps) {
+export function LogoMarquee({ logos, speed = 15, className = "" }: LogoMarqueeProps) {
   const scrollerRef = useRef<HTMLDivElement>(null)
   const scrollerInnerRef = useRef<HTMLDivElement>(null)
 
@@ -34,16 +34,18 @@ export function LogoMarquee({ logos, speed = 30, className = "" }: LogoMarqueePr
       const style = document.createElement("style")
       style.id = "marquee-keyframes"
       style.textContent = `
-      @keyframes scroll {
-        from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
-      }
-    `
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+  `
       document.head.appendChild(style)
     }
 
-    // Set animation
-    scrollerInnerRef.current.style.animation = `scroll ${speed}s linear infinite`
+    // Set animation with explicit infinite loop
+    if (scrollerInnerRef.current) {
+      scrollerInnerRef.current.style.animation = `scroll ${speed}s linear infinite`
+    }
 
     // Pause animation on hover
     const handleMouseEnter = () => {
