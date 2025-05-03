@@ -1,3 +1,6 @@
+
+import { LogoMarquee } from "@/components/logo-marquee"
+
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Check } from "lucide-react"
@@ -7,6 +10,19 @@ import type { Metadata } from "next"
 import { services } from "@/lib/services"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
+
+
+const credentialingLogos = [
+  { src: "/logos/unitedhealthcare.png", alt: "united healthcare", width: 120, height: 48 },
+  { src: "/logos/cigna.png", alt: "Cigna", width: 120, height: 48 },
+  { src: "/logos/bcbs.png", alt: "Blue Cross Blue", width: 120, height: 48 },
+  { src: "/logos/humana.png", alt: "Humana", width: 120, height: 48 },
+  { src: "/logos/medicare.png", alt: "Medicare", width: 120, height: 48 },
+  { src: "/logos/medicaid.png", alt: "Medicaid", width: 120, height: 48 },
+  { src: "/logos/kaiser.png", alt: "Kaiser", width: 120, height: 48 },
+  { src: "/logos/cms.png", alt: "CMS", width: 120, height: 48 },
+  { src: "/logos/aetna.png", alt: "Aetna", width: 120, height: 48 },
+]
 
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
@@ -57,6 +73,17 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </div>
         <h1 className="text-2xl md:text-4xl font-bold text-gray-900">{service.title}</h1>
       </div>
+
+      
+      {params.slug === "credentialing" && (
+        <div className="my-8 -mx-4  md:-mx-6 lg:-mx-8">
+          <h2 className="text-xl text-purple-600 md:text-2xl font-bold text-left mb-4">We Work With All Major Insurance Companies</h2>
+          <div className="border-t border-b bg-[#F8F7FF]  border-gray-200">
+            <LogoMarquee logos={credentialingLogos} speed={13}  className="py-4" />
+          </div>
+        </div>
+      )}
+
 
       {/* Description and Features Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 md:mb-12">
