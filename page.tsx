@@ -119,8 +119,8 @@ export default function Home() {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-bold mb-4">Contact Us</h3>
-            <p>Email: contact@medbillpro.com</p>
-            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@elanixenterprise.com</p>
+            <p>Phone: (512) 375-9999</p>
           </div>
           <div>
             <h3 className="font-bold mb-4">Company</h3>
