@@ -1,4 +1,4 @@
-import { FileText, Users, BarChart, LineChart, ClipboardCheck, Settings, Shield, Phone ,User , Globe ,Code ,BadgeCheck} from "lucide-react"
+import { FileText, Users, BarChart, LineChart, ShieldCheck,ClipboardCheck, Settings, Shield, Phone ,User , Globe ,Code ,BadgeCheck} from "lucide-react"
 
 export const services = [
   {
@@ -113,6 +113,94 @@ export const services = [
     ]
     
   },
+  {
+    slug: "provider-licensing",
+    title: "State Licensing",
+    description:
+      "Streamline your state and DEA licensing with our expert services tailored for individual providers and healthcare organizations.",
+    icon: ShieldCheck, // Replace with the appropriate icon you use (e.g., lucide-react icon)
+    image: "/StateLicensing.jpg?height=400&width=600", // Adjust path as needed
+    details: [
+      "Initial license applications for individual providers",
+      "License endorsements for additional states",
+      "DEA registration and endorsements",
+      "Licensing for group practices and clinics",
+      "Full-service documentation and application submission",
+      "State-specific compliance assistance",
+      "Dedicated licensing coordinator for each case",
+      "Transparent tracking and status updates throughout the process"
+    ],
+    pricing: [
+      {
+        plan: "Basic",
+        price: "$1000",
+        features: [
+          "Initial INDIVIDUAL license application — choose either:",
+          " • State medical license (first-time applicant)", 
+          " • DEA registration (first-time applicant)",
+          "Comprehensive document prep & quality review",
+          "Electronic submission and real-time status monitoring",
+          "Dedicated licensing coordinator until approval"
+        ]
+      },
+      {
+        plan: "Advanced",
+        price: "$700",
+        features: [
+          "INDIVIDUAL license endorsement / additional state — choose either:",
+          " • State medical license endorsement (already licensed elsewhere)", 
+          " • DEA license move / second-state registration",
+          "Gap analysis to ensure state-specific compliance",
+          "Expedited filing, follow-ups, and denial resolution",
+          "Progress reports delivered to your inbox"
+        ]
+      },
+      {
+        plan: "Pro",
+        price: "$2000",
+        features: [
+          "ORGANIZATION / GROUP license (clinic, group practice, ASC, etc.)",
+          "End-to-end project management for multi-provider entities",
+          "State & federal compliance review, including DEA numbers if needed",
+          "Custom task tracker for credentialing and roster updates",
+          "Priority support with a dedicated senior account manager"
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "What types of licenses do you handle?",
+        answer:
+          "We manage both state medical licenses and DEA registrations for individual providers, as well as group and clinic licensing."
+      },
+      {
+        question: "What’s the difference between an initial license and an endorsement?",
+        answer:
+          "An initial license is for providers applying for the first time. An endorsement allows an already licensed provider to obtain a license in another state."
+      },
+      {
+        question: "Do you offer services for DEA licensing?",
+        answer:
+          "Yes, we assist with both new DEA registrations and endorsements when a provider needs licensing in additional states."
+      },
+      {
+        question: "Can you help with licensing for a group or clinic?",
+        answer:
+          "Absolutely. Our Pro plan covers full-service licensing support for group practices, including all required documentation, compliance checks, and coordination."
+      },
+      {
+        question: "How long does the licensing process usually take?",
+        answer:
+          "Timeframes vary by state and license type, but it typically takes 2–8 weeks. We keep you informed throughout the entire process."
+      },
+      {
+        question: "What documents are required?",
+        answer:
+          "Documents may include identification, medical education proof, license history, DEA certificate (if applicable), and more. We provide a checklist and help you gather everything."
+      }
+    ]
+  }
+  ,
   {
     slug: "virtual-assistant",
     title: "Virtual Assistant",
