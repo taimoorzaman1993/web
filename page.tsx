@@ -229,6 +229,6 @@ const faqs = [
     question: "How long does it take to implement your billing services?",
     answer: "Implementation typically takes 2-4 weeks, depending on your practice size and requirements.",
   },
-  // Add more FAQs...
+  // Add more FAQs if needed...
 ]
 
